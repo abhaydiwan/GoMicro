@@ -7,8 +7,7 @@ RUN go clean -modcache
 
 
 
-ENV SOURCES /go/src/github.com/PacktPublishing/Advanced-Cloud-Native-Go/Communication/Go-Micro/
-COPY . ${SOURCES}
+ENV SOURCES /go/src/github.com/abhaydiwan/GoMicro/
 
 RUN cd ${SOURCES}server/ && CGO_ENABLED=0 go build
 
